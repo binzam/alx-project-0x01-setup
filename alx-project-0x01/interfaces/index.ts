@@ -67,3 +67,8 @@ export interface UserModalProps {
   onClose: () => void;
   onSubmit: (user: UserProps) => void;
 }
+
+export interface ButtonProps {
+  onClick: () => void;
+  label: string;
+}

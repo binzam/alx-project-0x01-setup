@@ -76,7 +76,7 @@ const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
     <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center">
       <div
         style={{
-          height: '80vh',
+          maxHeight: '80vh',
           overflowY: 'auto',
         }}
         className="bg-white rounded-lg p-8 shadow-lg w-full max-w-xl"

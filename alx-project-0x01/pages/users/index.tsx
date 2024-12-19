@@ -8,7 +8,8 @@ import { useState } from 'react';
 
 const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [, setUser] = useState<UserData | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [user, setUser] = useState<UserData | null>(null);
 
   const handleAddUser = (newUser: UserData) => {
     setUser({ ...newUser, id: users.length + 1 });
